@@ -39,3 +39,25 @@
     color: #fff; /* white color*/
     background: #55a532 linear-gradient(#91dd70, #55ae2e);
   }
+
+  /* INPUT */
+.input--text {
+    height: 34px;
+    padding: 0 10px;  /*padding은 border와 content 사이여백으로 위아래 0, 좌우 10px */
+    font-size: 16px;
+    border: 1px solid #ddd; /* 조금 밝은 컬러의 테두리로 설정*/
+    border-radius: 5px;
+    outline: none; /* 포커스할때 변하는 테두리색상인데  제어하기 어려워서 none으로 설정*/
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); 
+    /* inset은 입력창테두리 안쪽에 그림자를 넣을때! 7.5퍼센트 투명도를 의미 */
+  }
+  .input--text:focus {
+    border-color: #51a7e8;  /*  테두리 blue color */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
+  }
+
+  /* Vendor prefix(브라우저 업체별 접두어) */
+.input--text::-webkit-input-placeholder { color: #cacaca; } /* 크롬 */
+.input--text:-ms-input-placeholder      { color: #cacaca; } /* edge (microsoft)*/
+.input--text::-moz-placeholder          { color: #cacaca; } /* firefox (mozila) */
