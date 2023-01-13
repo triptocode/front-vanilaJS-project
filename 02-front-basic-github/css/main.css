@@ -4,3 +4,38 @@
     font-weight: 400;
     color:#333;
 }
+
+/* BTN */
+.btn {
+    height: 34px;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    display: inline-flex;/* flex는 블록처럼 가로전체차지, inline-flex;s는 글자크기만큼 가로크기 조절 */
+    align-items: center; /* *수직 가운데 정렬*/
+    padding: 0 12px; /* 가로크기조절을위한방법으로 padding과 display:inline-flex;를 사용 / padding은 위아래 여백은 없고 , 좌우여백만 12px로 설정 */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5; /* 줄크기. font-size에 곱하기 1.5, 줄크기는 즉 14px의 1.5배*/
+    color: #333; /** #333333과 동일 ?
+  
+    /* linear-gradient(DIRECTION, COLOR1, COLOR2, ...); */
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative; /*  부모영역-자식 요소 abosolute가 relative부모를 기준으로 이동하기에 설정해줌*/
+  }
+  
+  .btn:hover::before {
+    content: "";
+    position: absolute;  /* 자식영역-부모 relative를 기준으로 이동하기에 부모.btn 에 relative설정함*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07); /* 투명도 0.07*/
+  }
+  .btn.btn--primary {
+    border: 1px solid #65b836;
+    color: #fff; /* white color*/
+    background: #55a532 linear-gradient(#91dd70, #55ae2e);
+  }
