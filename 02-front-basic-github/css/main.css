@@ -49,7 +49,7 @@
     border-radius: 5px;
     outline: none; /* 포커스할때 변하는 테두리색상인데  제어하기 어려워서 none으로 설정*/
     box-sizing: border-box;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075); /*0 1px 2px red로 눈에띄는 컬러로 해당 영역확인가능 */
     /* inset은 입력창테두리 안쪽에 그림자를 넣을때! 7.5퍼센트 투명도를 의미 */
   }
   .input--text:focus {
