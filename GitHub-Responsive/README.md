@@ -72,7 +72,7 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 ### `index.html`
 
 ```html
-<meta name="author" content="HEROPY">
+<meta name="author" content="github-front-project">
 <meta name="description" content="GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
@@ -97,7 +97,8 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 'Google Map API' 를 호출하세요.
 
 ```
-AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg
+'Google Map API' 생략
+
 ```  
 
 아래 코드의 `YOUR_API_KEY` 부분에 위 'KEY'를 입력하세요.('KEY' 정보는 변경될 수 있습니다!)
