@@ -93,6 +93,9 @@ https://www.youtube.com/watch?v=afvT1c1ii0c
 <meta property="twitter:image" content="img/logo__github.png">
 <meta property="twitter:url" content="https://github.com">
 ```
+Google Map API 공식가이드 url 참고 https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+
+```
 
 'Google Map API' 를 호출하세요.
 
