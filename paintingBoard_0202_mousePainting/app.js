@@ -9,3 +9,4 @@ function onMove(event){
 }
  
 canvas.addEventListener("mousemove", onMove);
+canvas.addEventListener("mousedown", onMoveDown);

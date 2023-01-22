@@ -92,6 +92,22 @@ a {
   box-sizing: border-box;
 }
 
+/* SUMMARY */
+.summary{
+}
+
+.summary__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+.summary__description {
+  font-size: 26px;
+  font-weight: 300;
+  color: #767676;
+  line-height: 1.5;
+}
 
 /* HEADER */
 header {
@@ -181,4 +197,85 @@ header .sub-menu li a {
 }
 header .sub-menu li a:hover {
   color: #4078c0;
+}
+
+/* VISUAL */
+.section--visual {
+  /* position: relative; 공통으로 section안에 넣어둠 */
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.section--visual::before { /* visual 배경사진 어둡게 */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;  /* width: 100%; 와 동일효과 */
+  left: 0;    /* height: 100%; 와 동일효과 */
+  background: rgba(0, 0, 0, .3);
+}
+
+.section--visual .inner {
+/* .section .inner {} 안에 아래 2개를 공통으로 빼둠
+   max-width: 980px;
+   margin: 0 auto;  visual 글자 가운데로 배치*/
+  padding: 160px 0; /* visual 사진 위아래 안쪽여백 추가해서 늘려줌*/
+  display: flex; 
+} 
+
+.section--visual .summary{
+  /* 아래의 두줄을 flex:1  한줄코드로 변경해도 동일하다 
+  flex-basis: 0;
+  flex-grow: 1; */
+  flex: 1; 
+  /* flex: 0 1 auto; 가 기본값, flex: grow shrink basis 순서인데 
+  flex단축속성쓰는순간 auto는 0으로 변하고
+  여기서는 grow가1이고 shrink도 기본0으로, auto도 단축속성으로0 으로 변해 결국
+   flex: 1 0 0 값으로 변함. --> 이것을 더 줄여서 flex:0; 으로 작성했다. */
+  margin-right: 90px; 
+}
+
+.section--visual .summary__title {
+  font-size: 54px;
+  color: #fff;
+  /* text-shadow: X Y BLUR COLOR; */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
+               0 1px 25px rgba(0, 0, 0, .75);
+}
+.section--visual .summary__description {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
+  0 1px 25px rgba(0, 0, 0, .75);
+}  
+
+#sign-form {
+  width: 340px;
+  margin-top: 16px;
+}
+#sign-form li {
+  margin-bottom: 17px;
+}
+#sign-form li:last-child {
+  margin-bottom: 0;
+}
+#sign-form .input--text {
+  width: 100%;
+  height: 40px;
+}
+#sign-form .caption {
+  font-size: 12px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, .6);
+  line-height: 1.5;
+  text-align: center;
+}
+#sign-form [type="submit"] {
+  width: 100%;
+  height: 62px;
+  padding: 0 25px;
+  font-size: 20px;
+  justify-content: center;
 }
