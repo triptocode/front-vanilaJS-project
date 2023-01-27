@@ -227,7 +227,8 @@ header .sub-menu li a:hover {
 } 
 
 .section--visual .summary{
-  /* 아래의 두줄을 flex:1  한줄코드로 변경해도 동일하다 
+  /* suammary글과 sign-form 영역을 가로 반반정도 배치하기위함
+     아래의 두줄을 flex:1  한줄코드로 변경해도 동일하다 
   flex-basis: 0;
   flex-grow: 1; */
   flex: 1; 
