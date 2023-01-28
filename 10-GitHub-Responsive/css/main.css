@@ -343,10 +343,11 @@ header .sub-menu li a:hover {
 /* WHERE IS GITHUB */
 .section--where-is .inner {
   padding-top: 80px;
+  padding-bottom:80px;
 }
 #map {
   width: 100%;
-  height: 400px;
+  height: 500px;
   margin-top: 40px;
   border: 1px solid rgba(0, 0, 0, .2);
   border-bottom: none;
@@ -422,4 +423,3 @@ footer .logo {
 footer .logo:hover svg {
   fill: #4078c0;
 }
-
