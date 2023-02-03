@@ -427,6 +427,45 @@ margin-right:90px;
   font-weight: 300;
 }
 
+/* FOOTER */
+footer .inner {
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+}
+footer .site-links {
+  display: flex;
+}
+footer .site-links li {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #767676;
+}
+footer .site-links li:last-child {
+  margin-right: 0;
+}
+footer .site-links li a {
+  color: #4078c0;
+}
+footer .site-links li a:hover {
+  text-decoration: underline;
+}
+footer .logo {
+  /* 부모태그 inner 가 relative인것을 기준으로 이동하기에 absolute */
+  position: absolute;  
+  /* 네곳 모두 0으로 설정하면 -->전체영역으로 잡아주고 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    /* auto를 통해서 상하좌우 가운데로 배치! */
+  margin: auto;
+  /* svg 이미지 크기를 고려하며 최종 inner 부모영역을 기준으로 완벽하게 가운데 이동,배치시킴 */
+  width: 24px;
+  height: 24px;
+}
+footer .logo:hover svg {
+  fill: #4078c0;
+}
 
 /* MEDIA */
 @media(max-width: 1024px){
